@@ -20,6 +20,7 @@ CSS = """
 }
 .cell {
      flex: 0 50%;
+     max-width: 50%;
 }
 """
 
