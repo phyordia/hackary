@@ -1,3 +1,6 @@
+# Optimize Python code
+See this file [here](Optimize%20Python%20Code.ipynb)
+
 # Jupyter Notebook Hacks
 ## Jupyter Notebook Auto-reload modules
 Add to the top of the notebook:
