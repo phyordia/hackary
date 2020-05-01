@@ -87,7 +87,6 @@ args.func(args)
 from subprocess import Popen, PIPE, STDOUT
 
 bytz = zf.read(f)
-#####'-enc UTF-8',
 p = Popen(['pdftotext',  '-layout',   '-', '-' ], stdout=PIPE, stdin=PIPE, stderr=STDOUT)
 stdout = p.communicate(input=bytz)[0]
 text = stdout.decode()
