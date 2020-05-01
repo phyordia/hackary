@@ -106,6 +106,16 @@ except Exception as e:
   traceback.print_exc()
 ```
 
+## Get function caller
+```python
+import inspect
+...
+def f():
+    curframe = inspect.currentframe()
+    calframe = inspect.getouterframes(curframe, 2)
+    print('caller name:', calframe[1][3])
+```
+
 # Python External Tools
 ## pyinstaller
 In case of `os.fspath()` error, try:
