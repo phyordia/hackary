@@ -62,6 +62,8 @@ HTML('<style>{}</style>'.format(CSS))
 output:
 ![img](img/ipynb_sidebyside.jpeg)
 
+## Logging to a DB:
+See [this](https://stackoverflow.com/questions/2314307/python-logging-to-database)
 
 ## Nested sub-parsers
 ```python
