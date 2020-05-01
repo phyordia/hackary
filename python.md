@@ -7,9 +7,58 @@ Add to the top of the notebook:
 ```
 
 ## Notebook cells in 2 columns
+```python
+from IPython.display import display, HTML
+# two columns alternate
+CSS = """
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cell {
+     flex: 0 50%;
+}
+"""
+
+HTML('<style>{}</style>'.format(CSS))
+```
+
+
+output:
+![img](img/ipynb_2cols.jpeg)
 
 
 ## Notebook in/out side-by-side
+```python
+from IPython.display import display, HTML
+
+# input left, output right
+CSS = """
+.container {
+    display: bock;
+}
+.cell {
+    flex: 1;
+    display: flex;
+    flex-direction: row !important;
+}
+.input {
+     flex: 0 50%;
+     max-width: 50%;
+     height:200%;
+}
+.output_wrapper{
+ flex:0 50%;
+}
+"""
+
+HTML('<style>{}</style>'.format(CSS))
+
+```
+
+output:
+![img](img/ipynb_sidebyside.jpeg)
+
 
 ## Nested sub-parsers
 ```python
