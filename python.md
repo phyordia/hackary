@@ -91,7 +91,7 @@ text = stdout.decode()
 ```
 
 # Debuggin and auditing
-##Traceback
+## Traceback
 ```python
 import traceback 
 try:
@@ -108,16 +108,18 @@ In case of `os.fspath()` error, try:
 `LD_LIBRARY_PATH=${CONDA_PREFIX}/lib pyinstaller file.spec`
 
 ## SSL Issues with pip install
-pip --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org install <pkg>
 
-Pyenv failed to install python 3.7.X because of ModuleNotFoundError: No module named 'pyexpat'
+`pip --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org install <pkg>`
 
+## PyEnv
+If Pyenv failed to install python 3.7.X because of ModuleNotFoundError: No module named 'pyexpat', try:
+`
 SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk MACOSX_DEPLOYMENT_TARGET=10.14 pyenv install 3.7.4
+`
 
 ## Enable framework with PyEnv
 
 `env PYTHON_CONFIGURE_OPTS="--enable-framework"`
-
 
 
 
