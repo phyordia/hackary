@@ -4,4 +4,4 @@
 
 ## [Python Code Optimization](Optimize%20Python%20Code.ipynb)
 
-## [Shell Scripting (bash and zsh)](shell.md)
+## [Shell Scripting (bash, zsh, and assorted command line magic)](shell.md)
